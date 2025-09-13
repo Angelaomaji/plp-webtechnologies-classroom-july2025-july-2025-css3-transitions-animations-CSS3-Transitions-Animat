@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f4f4f9;
+  color: #333;
+  text-align: center;
+}
+
+/* Part 1: CSS3 Transitions & Animations */
+.fancy-btn {
+  padding: 10px 20px;
+  border: none;
+  background: #0077b6;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.fancy-btn:hover {
+  background: #0096c7;
+  transform: scale(1.1);
+}
+
+/* Animated Box with keyframes */
+.animated-box {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: coral;
+  animation: bounce 2s infinite alternate;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50px); }
+}
+
+/* Part 3: JS Triggered Animation */
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  background: lightseagreen;
+  transition: transform 1s ease-in-out;
+}
+
+.box.animate {
+  transform: rotate(360deg) scale(1.2);
+}
